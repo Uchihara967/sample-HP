@@ -1,0 +1,250 @@
+@charset "utf-8";
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.font_Rampart {
+  font-family: "Nanum Pen Script", cursive;
+
+}
+.font_rampart {
+  font-family: "Rampart One", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* ヘッダー */
+header {
+  padding: 30px 0;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #5bbee5;
+}
+
+.container p {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container p span {
+  font-size: 26px;
+  color: #5bbee5;
+}
+
+.nav_menu li {
+  font-size: 18px;
+  margin-left: 30px;
+  transition: .2s;
+}
+
+.nav_menu li:hover {
+  color: #5bbee5;
+  border-bottom: solid 1px #000;
+  transition: .2s;
+}
+
+/* メイン */
+#hero {
+  background-image: url(../img/home_img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero_bg {
+  background-color: #462323;
+  width: 30px;
+  height: 40px;
+}
+
+.hero_inner {
+  background-color: rgba(10, 10, 10, 0.3);
+  color: #ddd;
+  text-align: center;
+  z-index: 2;
+  line-height: 1.5;
+  padding: 20px 30px;
+}
+
+.hero_inner h1 {
+  font-size: 60px;
+}
+
+.hero_inner p {
+  font-size: 24px;
+}
+
+/* TEAM */
+.teme {
+  margin-bottom: 100px;
+}
+
+.font_rampart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.font_rampart::before, .font_rampart::after {
+  border-top: solid 1px #5bbee5;
+  content: '';
+  width: 3em;
+}
+
+.font_rampart::before {
+  margin-right: 12px;
+}
+
+.font_rampart::after {
+  margin-left: 12px;
+}
+
+.img_list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img_list img {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.img_list li::before {
+  white-space: pre;
+  content: 'Webエンジニア\A募集中';
+  line-height: 1.4;
+  width: 24.2%;
+  height: 20%;
+  position: absolute;
+  background-color: rgba(10, 10, 10, 0.3);
+  color: #ddd;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* TOPICS */
+.topics_bg {
+  background-color: #f5fafa;
+}
+.topics {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.icon img {
+  height: 120px;
+}
+
+.topics_a {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #ddd;
+}
+
+.topics_a:last-child {
+  border-bottom: none;
+}
+
+.topics_date {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.wrapper h3 {
+  margin-bottom: 10px;
+}
+
+.wrapper h3 a {
+  color: #5bbee5;
+  font-size: 18px;
+  border-bottom: solid 1px #5bbee5;
+}
+
+.wrapper p {
+  text-align: left;
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  background-color: #5bbee5;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.bord {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bord::before, .bord::after {
+  border-top: solid 1px #fff;
+  content: '';
+  width: 16px;
+  transform: rotate(90deg);
+}
+
+.bord::before {
+  margin-right: 10px;
+}
+
+.bord::after {
+  margin-left: 10px;
+}
+
+.copy {
+  font-size: 12px;
+  text-align: center;
+}
