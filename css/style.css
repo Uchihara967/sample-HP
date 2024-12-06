@@ -248,3 +248,45 @@ footer {
   font-size: 12px;
   text-align: center;
 }
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+  header {
+    padding: 20px 0;
+  }
+
+  .nav_menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero {
+    height: 400px;
+  }
+
+  .hero_inner h1 {
+    font-size: 40px;
+  }
+
+  .hero_inner p {
+    font-size: 18px;
+  }
+
+  .img_list {
+    flex-direction: column;
+  }
+
+  .topics {
+    width: 90%;
+  }
+
+  .topics_a {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .topics_a .wrapper {
+    text-align: center;
+  }
+}
