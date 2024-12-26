@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-
+  
   const images = [
     "./img/home_img1.jpg",
     "./img/home_img2.jpg",
