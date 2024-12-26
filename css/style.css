@@ -103,6 +103,32 @@ header {
   font-size: 24px;
 }
 
+/* 矢印ボタン */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 3;
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.arrow:hover {
+  background-color: rgba(173, 182, 244, 0.8);
+}
+
 /* TEAM */
 .teme {
   margin-bottom: 100px;
